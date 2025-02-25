@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const NodeCache = require('node-cache');
 const currencyRoutes = require('./currency-convertor/routes/currencyRoutes');
-const db = require('./currency-convertor/config/db');  
+
 
 const app = express();
 
