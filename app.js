@@ -27,6 +27,10 @@ app.use('/api/', limiter);
 
 app.use('/api', currencyRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Hello! Welcome to my Hat.io assignment live link: [Your Live Link Here]');
+});
+
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ error: 'Something went wrong!' });
